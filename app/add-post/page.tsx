@@ -3,11 +3,9 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React, { useState } from "react";
 import {useRouter} from "next/navigation";
-type FormFieldProps = {
-  onSubmit: (title: string, content: string) => void;
-};
 
-const MyForm: React.FC<FormFieldProps> = ({  }) => {
+
+const MyForm: React.FC = ({  }) => {
 
   const router = useRouter()
   const [title, setTitle] = useState("");
