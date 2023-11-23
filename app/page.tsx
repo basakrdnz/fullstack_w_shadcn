@@ -1,5 +1,5 @@
 import { Prisma, PrismaClient } from "@prisma/client";
-import Post from "./components/Post";
+import Post from "../diffcomponents/Post";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { cache } from "react";
