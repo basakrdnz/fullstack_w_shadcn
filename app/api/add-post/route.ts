@@ -1,8 +1,9 @@
 import { PrismaClient } from '@prisma/client';
+import { NextResponse } from 'next/server';
 
 const prisma = new PrismaClient();
 
-export async function POST(request) {
+export async function POST(request:any) {
   try {
     const res = await request.json();
     const { title, content } = res;
@@ -20,6 +21,6 @@ export async function POST(request) {
     return NextResponse.json({ result });
   } catch (error) {
     console.error(error);
-    return NextResponse.error(error.message, { status: 500 });
+    return NextResponse.error();
   }
 }
