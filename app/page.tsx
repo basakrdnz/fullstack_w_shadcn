@@ -25,7 +25,7 @@ export default async function Home() {
           id={post.id}
           title={post.title}
           content={post.content}
-          authorName={post.author?.name}
+          authorName={"Basak"}
           key={post.id}
         ></Post>
       ))}
