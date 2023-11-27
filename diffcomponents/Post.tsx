@@ -15,10 +15,10 @@ interface PostProps {
 const Post = ({ id, title, content, authorName }: PostProps) => {
   return (
     <section>
-      <div className="border-2 flex p-5 rounded-full border-gray-400">
+      <div className="flex border-4 border-gray-300 rounded-full cursor-pointer container  flex-wrap">
         <HoverCard>
-          <HoverCardTrigger>{title}</HoverCardTrigger>
-          <HoverCardContent className="w-auto max-w-xl p-10 m-10 gap-6">
+          <HoverCardTrigger className="p-6 flex text-2xl ">{title}</HoverCardTrigger>
+          <HoverCardContent>
             <h3 className="font-bold">Author: {authorName}</h3>
             <h4 className="font-bold">{title}</h4>
             <p>{content}</p>

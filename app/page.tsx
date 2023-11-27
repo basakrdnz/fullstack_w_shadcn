@@ -21,7 +21,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="font-bold text-3xl">Feed</h1>
-      <div className="flex my-auto gap-20 text-xl cursor-pointer">
+      <div className="flex gap-10 my-auto">
         {posts.map((post) => (
           <Post
             id={post.id}
@@ -31,7 +31,7 @@ export default async function Home() {
             key={post.id}
           ></Post>
         ))}
-      </div>{" "}
+      </div>
       <Link href={"/add-post"}>
         <Button>Add Post</Button>
       </Link>
