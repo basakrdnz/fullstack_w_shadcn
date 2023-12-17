@@ -38,7 +38,7 @@ const MyForm: React.FC = ({  }) => {
     <div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col border-4 border-black m-20 p-20 items-center gap-5 font-bold"
+        className="flex flex-col max-w-xl border-4 border-black m-20 p-20 items-center mx-auto gap-7 font-bold"
       >
         <h1 className="flex p-16 text-2xl ">NEW POST AREA</h1>
         <div className="flex flex-col">
@@ -66,8 +66,9 @@ const MyForm: React.FC = ({  }) => {
           <Button type="submit"> Submit Post</Button>
         </div>
       </form>
-    
-    <Link href={"/"}>go to main page</Link>
+    <div className="flex w-80 m-auto border-4 rounded-xl bg-black text-white p-5">
+    <Link href={"/"} className="m-auto font-bold">GO TO MAIN PAGE</Link>
+    </div>
     </div>
   );
 };
